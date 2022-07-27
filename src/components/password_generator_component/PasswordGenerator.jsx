@@ -18,7 +18,6 @@ const PasswordGenerator = () => {
     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
   const animateTitle = () => {
-    // animate text by replacing each character with a different one every frame until the end of the string
     const titleArray = title.split('')
     const newTitle = titleArray
       .map((character, index) => {
@@ -38,10 +37,6 @@ const PasswordGenerator = () => {
 
   useEffect(() => {
     generatePassword()
-    // setInterval(() => {
-    //   animateTitle()
-    // }, 500)
-    // animateTitle2()
   }, [])
 
   const generatePassword = () => {
